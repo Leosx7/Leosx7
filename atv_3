@@ -1,0 +1,13 @@
+import {question} from 'readline-sync'
+console.log('... Conversor de minutos para horas ....')
+
+// Entrada
+var minutos = Number(question('Quantos minutos:'))
+
+// Processamento
+var horas = Math.floor(minutos / 60);
+
+var minutosRestantes = minutos % 60;
+
+// Saída
+console.log(`> ${minutos} minutos equivale a ${horas} horas e ${minutosRestantes} min`)

@@ -1,0 +1,12 @@
+import {question} from 'readline-sync'
+
+
+// Entrada
+var dolar = Number(question('Qual valor do dolar:'))
+var valor = Number(question('Quantos dolares a serem convertidos:'))
+
+// Processamento
+var valor_real = dolar * valor
+
+// Saída
+console.log(`> O valor de ${valor.toFixed(2)} dolares é igual a  ${valor_real.toFixed(2)} reais`)
